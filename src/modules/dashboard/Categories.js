@@ -3,6 +3,8 @@ import { Col, Card, Row, Breadcrumb, Button } from "react-bootstrap";
 
 import baseHelper from "../../lib/helper";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const Categories = ({ updatedCategory, setSubCategories, setSelectedCategory }) => {
   return (
     <>
@@ -24,7 +26,8 @@ const Categories = ({ updatedCategory, setSubCategories, setSelectedCategory }) 
                       alt="No Image Found"
                     />
                   <Card.Body>
-                      <Button style={{textAlign: "center"}}
+                      <Button style={{textAlign: "center", fontSize: "17px"}}
+                        className="buttonIcon"
                         type="button"
                         onClick={() => {
                           setSubCategories(category.subcategories)
@@ -33,8 +36,7 @@ const Categories = ({ updatedCategory, setSubCategories, setSelectedCategory }) 
                         block
                         size="lg"
                       >
-                        {category.name}
-                        <i className="fas fa-chevron-right"></i>
+                        {category.name} <FontAwesomeIcon icon="book" />
                       </Button>
                   </Card.Body>
                 </Card>

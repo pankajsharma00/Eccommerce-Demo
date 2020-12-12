@@ -6,9 +6,7 @@ import baseHelper from "../../lib/helper";
 
 const SubCategories = ({ subCategories, selectedCategory, setSubCategories }) => {
   const showImage = (imageName) => {
-    const defaultImage = "https://via.placeholder.com/150?text=No Image";
-    const imageUrl = baseHelper.getImagePath(imageName,"category/subcategory") || defaultImage;
-    console.log("imag", imageUrl);
+    const imageUrl = baseHelper.getImagePath(imageName,"category/subcategory");
     return imageUrl;
   }
   
@@ -32,7 +30,8 @@ const SubCategories = ({ subCategories, selectedCategory, setSubCategories }) =>
                     />
                   </div>
                   <Card.Body>
-                      <Button style={{textAlign: "center"}}
+                      <Button style={{textAlign: "center", fontSize: "17px"}}
+                        className="buttonIcon"
                         type="button"
                         onClick={() => true}
                         block
