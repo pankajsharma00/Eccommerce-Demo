@@ -1,0 +1,35 @@
+.headerTitle {
+  color: #ffffff;
+}
+
+.headerLink {
+  text-decoration-line: none;
+  cursor: pointer;
+}
+
+.footer {
+  position: fixed !important;
+  left: 0;
+  bottom: 0 !important;
+  width: 100%;
+}
+
+.breadcrumb {
+ background-color: #ffffff;
+}
+
+.dropdown-toggle::after { 
+  border-top: 0 solid !important;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  text-align: center;
+}
